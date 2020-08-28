@@ -1,0 +1,6 @@
+data_path,whether_load_preprocess,rate0_sig1,coefficient_samplerate,numcep,nfilt,,,,,
+(type your path),1,1,1,64,130,,,,,
+model_choose,learning_rate,epoch,batch_size,Lstm_hidden_num,bidirectional,whether_Adam,Momentum_gamma,weight_decay,whether_load_model,cnn_type
+cnn,0.0002,2,256,5,1,1,0.9,0.000001,0,VGG16
+record_name,,,,,,,,,,
+(type your path),,,,,,,,,,
