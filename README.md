@@ -7,41 +7,40 @@ Tensorflow requirement: tensorflow==2.1.0
 
 CNN/LSTM/LSTM-based End to end/ Attention model are used in this project.
 
-Configuration csv file is to load in parameters, keep it at the same load with code
+Configuration csv file is to load in parameters. Keep it at the same load path code
 
-You need to create two package -- "preprocess", "model" and "record" at the same load with code
+You need to create two package -- "preprocess", "model" and "record" at the same path with code
 
-Run main.py, and the system will generate hdf5 model, preprocessing data and record data( include model history, test score, model building time and configuration)
+Run main.py, and the system will generate hdf5 model, preprocessing data and record data(include model history, test score, model building time and configuration)
 
 
 Configuration:
 
-data_path:   data set package path 
+data_path: your data set package path 
 
-whether_load_preprocess:    whether to load preprocessed data if it exists (or cover it)
+whether_load_preprocess: whether to load preprocessed data if it exists (or cover it)
 
-rate0_sig1:    whether to choose rate or length of signal as MFCC's sample_rate
-                           (if rate: revert original sample rate of audio; if length of signal: make all MFCC shape the
-                           same without padding)
+rate0_sig1: whether to choose rate or length of signal as MFCC's sample_rate
+            (if rate: revert original sample rate of audio; if length of signal: make all MFCC shape the same without padding)
                            
-coefficient_samplerate:        coeffient of sample rate
+coefficient_samplerate: coeffient of sample rate
 
-numcep:       number of cepstrum to return
+numcep: number of cepstrum to return
 
-nfilt:       number of filters in the filterbank
+nfilt: number of filters in the filterbank
 
-model_choose:    which model to perform
+model_choose: which model to perform
 
-Lstm_hidden_num:     number of hidden units of LSTM layer
+Lstm_hidden_num: number of hidden units of LSTM layer
 
-bidirectional:   whether lstm model's lstm bidirectional or not
+bidirectional: whether lstm model's lstm modules bidirectional or not
 
 whether_Adam: whether to perform Adam optimiser, if not perform Momentum
 
-Momentum gamma:  a variable of Momentum
+Momentum gamma: parameter of Momentum
 
 weight_decay: weight decay for Momentum
 
-whether_load_model:       whether to load trained model if it exists (or cover it)
+whether_load_model: whether to load trained model if it exists (or cover it)
 
-record_name:   record document's name to be saved in record file
+record_name: the path you would like to save the generated record docs
