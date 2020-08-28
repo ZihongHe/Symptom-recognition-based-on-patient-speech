@@ -1,4 +1,4 @@
-This is a symptom recognition system based on MFCC features from patient self-description
+This is a symptom recognition system based on MFCC features from patient self-description wav audio
 
 Dataset: Medical speech, transcription, and intent, url: https://www.figure-eight.com/dataset/audio-recording-and-transcription-for-medical-scenarios/, March 2020.
 Please put all dataset files in a package. Then create a package name "train" inside and put train wav in; Then create a package name "test" inside and put test wav in; Then create a package name "validate" inside and put validate wav in;
